@@ -63,7 +63,7 @@ const Activities = () => {
   return (
     <Container maxW="container.md" py={8}>
       <VStack gap={8} align="stretch">
-        <Heading size="xl" mb={6}>Your Activities ({activities.length})</Heading>
+        <Heading size="xl" mb={6}>Your Activities Bro({activities.length})</Heading>
         
         {activities.map((activity) => (
           <Box 
