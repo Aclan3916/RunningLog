@@ -7,7 +7,7 @@ import {
     Heading,
     Text,
     Stack,
-    RatingGroup
+    // RatingGroup
 } from "@chakra-ui/react"
 import { useState } from "react"
 import { createRun } from '../lib/api'
@@ -55,7 +55,7 @@ const RunLog = () => {
             console.error('Error creating run:', error)
         }
     }
-    const [value, setValue] = useState(3)
+    // const [value, setValue] = useState(3)
     return (
         <Container maxW="container.sm" py={8}>
             <VStack gap={8}>
@@ -144,7 +144,7 @@ const RunLog = () => {
                             </VStack>
                         </Box>
 
-                        <Box as="fieldset" borderWidth="1px" rounded="lg" p={4}>
+                        {/* <Box as="fieldset" borderWidth="1px" rounded="lg" p={4}>
                             <Text as="legend" fontSize="lg" fontWeight="medium" px={2}>
                                 Rating
                             </Text>
@@ -158,7 +158,7 @@ const RunLog = () => {
                             <RatingGroup.Control />
                             </RatingGroup.Root>
                             </Box>
-                        </Box>
+                        </Box> */}
 
                         <Button
                             type="submit"
