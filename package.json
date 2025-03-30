@@ -6,11 +6,12 @@
   "homepage": "https://aclan3916.github.io/RunningLog/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run clean && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "clean": "rm -rf dist"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.2.4",

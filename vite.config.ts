@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   base: '/RunningLog/',
   build: {
+    emptyOutDir: true, // Add this line to clean the dist folder before each build
     rollupOptions: {
       output: {
         manualChunks: {
